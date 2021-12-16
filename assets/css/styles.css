@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+header{
+    background-color: #aca1cc;
+}
+.menu{
+    visibility: hidden;
+    width: 35px;
+}
+.fermer{
+    visibility: hidden;
+    width: 35px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container1{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+}
+#logo{
+    width: 8%;
+    padding-right: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    font-size: 27px;
+}
+.navigation nav ul{
+    display: flex;
+    list-style: none;
+}
+.navigation a{
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+}
+.navigation li:hover{
+    border: 1px solid #000;
+    border-width: 0 0 3px 0;
+}
+/****************** fin navigation ************/
+.block{
+    display: flex;
+    padding: 70px;
+}
+.titre{
+    width: 38%;
+    font-size: 82px;
+    padding: 51px;
+}
+.paraTitre{
+    width: 36%;
+    margin: auto auto auto 0;
+}
+.paraTitre p{
+    font-size: 19px;
+}
+.paraTitre p:nth-child(1){
+    padding: 15px 0;
+}
+#heart{
+    width: 7%;
+}
+.petitTexte{
+    position: absolute;
+    font-size: 12px;
+    right: 25px;
+    margin-top: 184px;
+}
+.petitTexte1{
+    position: absolute;
+    font-size: 12px;
+    right: 25px;
+}
+.petitTexte2{
+    position: absolute;
+    font-size: 12px;
+    right: 25px;
+}
+/******************* fin header *****************/
+.voiture{
+    background-color: #6e6c6c;
+}
+#voiture{
+    width: 100%;
+}
+/******************* fin image voiture ***********/
+#jaune{
+    background-color: #f6c705;
+    padding-bottom: 70px;
+}
+.block1{
+    padding: 115px 70px;
+}
+.titre1{
+    font-size: 125px;
+}
+.paraTitre1{
+    width: 46%;
+}
+.paraTitre1 p{
+    font-size: 19px;
+}
+/***************** fin section jaune *****************/
+#rose{
+    background-color: #f2878d;
+    padding-bottom: 70px;
+}
+.titre2{
+    width: 82%;
+    font-size: 52px;
+    padding: 25px 0;
+}
+.paraTitre2{
+    width: 80%;
+    padding: 10px;
+}
+.paraTitre2 p{
+    font-size: 19px;
+}
+.bottom{
+    background-color: rgba(128, 128, 128, 0.678);
+    position: absolute;
+    right: 44px;
+    border-radius: 50px;
+}
+.bottom .fas{
+    color: #fff;
+    font-size: 23px;
+    padding: 23px;
+}
+/***************** fin section rose *****************/
+
+@media screen and (max-width: 919px) {
+    .paraTitre{
+        width: 39%;
+        margin: auto;
+    }
+    .block{
+        width: 80%;
+    }
+    .block1{
+        width: 80%;
+    }
+    .petitTexte, .petitTexte1, .petitTexte2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 697px) {
+    .menu{
+        visibility: visible;
+    }
+    .navigation{
+        display: block;
+        text-align: right;
+        position: fixed;
+    }
+    .navigation nav{
+        visibility: hidden;
+    }
+    .navigation nav ul li a{
+        text-align: center;
+    }
+    .navigation nav ul{
+        float: right;
+        flex-direction: column;
+        background-color: #f2878d;
+        padding: 40px;
+    }
+    .navigation li{
+        padding: 10px;
+        border: 1px solid #000;
+        border-width: 0 0 3px 0;
+    }
+    .navigation a{
+        padding: 2px;
+    }
+    
+    .block{
+        width: 80%;
+        display: block;
+        padding: 25px;
+    }
+    .block1{
+        width: 80%;
+        padding: 25px;
+    }
+    .block1 p {
+        padding: 10px;
+    }
+    .titre{
+        margin: auto;
+    }
+    .titre1{
+        margin: auto;
+    }
+    .block1 p:nth-child(){
+        text-align: center;
+    }
+    
+    .paraTitre1{
+        margin: auto;
+    }
+    .titre2{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 697px) {
+    .titre{
+        margin: 0;
+        width: 0%;
+        font-size: 70px;
+    }
+    .paraTitre{
+        width: 70%;
+    }
+    .paraTitre1{
+        width: 91%;
+    }
+    .titre2{
+        font-size: 31px;
+    }
+}
